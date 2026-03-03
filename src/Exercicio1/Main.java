@@ -8,6 +8,7 @@ public class Main {
         String nome;
         double valor;
         int quantidade;
+        double porcentagem;
 
         System.out.println("Nome do produto: ");
         nome = entrada.nextLine();
@@ -20,5 +21,11 @@ public class Main {
 
         Produto produto = new Produto(nome, valor, quantidade);
 
+        System.out.println("Qual a porcentagem de aumento? ");
+        porcentagem = entrada.nextDouble();
+
+        produto.aumentarValor(porcentagem);
+
+        System.out.println(produto.valor);
     }
 }

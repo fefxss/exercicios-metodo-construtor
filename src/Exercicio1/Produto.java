@@ -6,10 +6,10 @@ public class Produto {
     int quantidade;
 
     //CONSTRUTOR
-    public Produto(String n, double v, int q){
-        nome = n;
-        valor = v;
-        quantidade = q;
+    public Produto(String nome, double valor, int quantidade){
+        this.nome = nome;
+        this.valor = valor;
+        this.quantidade = quantidade;
     }
 
     public void aumentarValor(double porcentagem){
